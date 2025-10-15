@@ -5,13 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Photo Gallery</title>
 		<link rel="stylesheet" href="css/gallery.css">
-		<script src = "js/gallery.js"></script>
 	</head>
 	<body onload="setImages()">
 		<div id = "image">
 			Hover over an image below to display here.
 		</div>
-
+		
 		<img class = "preview" alt = "Styling with a Bandana" src = "images/dog5-mithulvarshan-2318990.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
 		
 		<img class = "preview" alt = "With My Boy" src = "images/dog1-valeriya-1805164.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
@@ -24,4 +23,5 @@
 		
 		<img class = "preview" src = "images/lama-3396657.jpg" alt = "Dummy Lama" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus="upDate(this)" onblur="unDo()">
 	</body>
-</html>
+	<script src = "js/gallery.js"></script>
+	</html>
