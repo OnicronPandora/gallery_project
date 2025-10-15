@@ -3,6 +3,7 @@ body{
 		margin: 2%;
 		border: 1px solid black;
 		background-color: #b3b3b3;
+    max-height: 50%;
 }
 #image{
     line-height:650px;
@@ -24,6 +25,13 @@ body{
 		margin-left:17%;
     border: 10px solid black;
 }
+
+img:hover, img:focus {
+    opacity: 1;
+    cursor: pointer;
+}
+
 img{
 		width:95%;
+    opacity: .75;
 }

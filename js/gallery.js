@@ -28,4 +28,20 @@ function upDate(previewPic){
     document.getElementById("image").innerHTML = originText;
 
     document.getElementById("image").style.backgroundImage = `url("")`;
-	}
+}
+
+function setImages() {
+    options = [ 
+        "dog1-valeriya-1805164.jpg", "pexels-bekka419-982314.jpg",
+        "lama-3396657.jpg", "dog5-mithulvarshan-2318990.jpg"
+    ]
+    
+    currentImage = document.querySelectorAll(".preview");
+    for (let i = 0; i < currentImage.length; i++) {
+        console.log("Image " + i);
+        
+        randomImg = "images/" + options[Math.floor(Math.random() * options.length)];
+
+        currentImage[i].setAttribute("tabindex", "0"); 
+    }
+}
